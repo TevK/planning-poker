@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+body { margin: 0; }
+
 #kss-topnav {
     position: fixed;
     top: 0;
@@ -14,6 +16,8 @@
 #kss-topnav > * > ul > li > span {
     color: #fff;
 }
+
+
 /*
 body {
 	background-image: url('../img/pattern_bg.jpg');
@@ -151,8 +155,8 @@ img {
 }
 
 .poker-main, .poker-footer {
-	max-width: 1060px;
-	margin: auto;
+	/* max-width: 1060px; 
+	margin: auto; */
 }
 
 .poker-main {
