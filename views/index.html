@@ -146,13 +146,13 @@
 				<% } %>
 			</div>
 			<div class="poker-cards-show scrum-master">
-				<button id="poker-room-reset"><img src="img/icon/page_delete.png" alt=""> <%= __('room-reset') %></button>
-				<button id="poker-cards-reset-button"><img src="img/icon/page_refresh.png" alt="" /> <%= __('cards-reset') %></button>
-				<button id="poker-cards-show-button" disabled="disabled"><img src="img/icon/pictures.png" alt="" /> <%= __('cards-show') %></button>
+				<button id="poker-room-reset" type="button" class="Button Button--secondary"><i class="Icon--removeFolder"></i> <%= __('room-reset') %></button>
+				<button id="poker-cards-reset-button"type="button" class="Button Button--secondary"><i class="Icon--undo"></i> <%= __('cards-reset') %></button>
+				<button id="poker-cards-show-button" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('cards-show') %></button>
 			</div>
 			<form class="poker-userstory-form scrum-product-owner">
 				<textarea id="poker-userstory-textarea"></textarea>
-				<button id="poker-userstory-post" disabled="disabled"><img src="img/icon/page_go.png" alt="" /> <%= __('userstory-post') %></button>
+				<button id="poker-userstory-post" disabled="disabled" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('userstory-post') %></button>
 			</form>
 			<div class="poker-separator">&nbsp;</div>
 		</div>
