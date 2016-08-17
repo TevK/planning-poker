@@ -160,9 +160,11 @@ img {
 }
 
 .poker-main {
+	/*
 	background-color: #fff;
 	border-radius: 10px;
 	box-shadow: 0 5px 8px -5px #606060;
+	*/
 }
 
 .poker-content {
@@ -171,12 +173,14 @@ img {
 
 .poker-footer {
 	margin-top: 20px;
+	/*
 	box-shadow: 0 0 5px #606060;
 	background: #666;
-	/*border-radius: 10px 10px 0 0;*/
+	border-radius: 10px 10px 0 0;
 	border-radius: 10px;
 	padding-top: 10px;
 	color: #999;
+	*/
 }
 
 .poker-felt {
