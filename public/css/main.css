@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+#kss-topnav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #406e98;
+    border-bottom: 2px solid #394856;
+}
+/*
 body {
 	background-image: url('../img/pattern_bg.jpg');
 	margin-bottom: 0;
@@ -46,6 +55,7 @@ img {
 	position: relative;
 	top: 3px;	
 }
+*/
 
 .poker-ajax-loader {
 	display: none;
