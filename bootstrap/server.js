@@ -45,7 +45,8 @@ BootstrapServer.prototype.createWebsocketServer = function() {
 
 BootstrapServer.prototype.run = function() {
     var server = this;
-    this.httpServer.listen(this.config.http.port, function() {
+    const PORT = process.env.PORT || 3000;
+    this.httpServer.listen(PORT, function() {
         console.log('HTTP Server running with config:');
         console.log(server.config.http);
     });
