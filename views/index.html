@@ -33,6 +33,20 @@
     <span>Chat</span>
     <i class="Button-caret"></i>
   </button>
+  <div class="poker-chat">
+	<div class="poker-chat-tray">
+		<img src="img/icon/comments.png" alt="Chat" class="poker-chat-nonew" />
+		<img src="img/icon/comments_add.png" alt="Chat" class="poker-chat-new" />
+		<span><%= __('room-chat') %></span>
+	</div>
+	<div class="poker-chat-messages-container">
+		<div class="poker-chat-messages"></div>
+		<form class="poker-chat-messages-new">
+			<input type="text" name="new-chat-message" />
+			<img src="img/icon/add.png" alt="Go" />
+		</form>
+	</div>
+</div>
                     
                 </div>
                 <ul class="List--unstyled u-gamma u-weightSemiBold u-marginFlush">
@@ -98,20 +112,6 @@
 
 		<div class="poker-content">
 			<h1><%= __('title') %></h1>
-			<div class="poker-chat">
-				<div class="poker-chat-tray">
-					<img src="img/icon/comments.png" alt="Chat" class="poker-chat-nonew" />
-					<img src="img/icon/comments_add.png" alt="Chat" class="poker-chat-new" />
-					<span><%= __('room-chat') %></span>
-				</div>
-				<div class="poker-chat-messages-container">
-					<div class="poker-chat-messages"></div>
-					<form class="poker-chat-messages-new">
-						<input type="text" name="new-chat-message" />
-						<img src="img/icon/add.png" alt="Go" />
-					</form>
-				</div>
-			</div>
 			<div class="poker-users">
 				<p><%= __('room-present') %>:</p>
 				<p class="poker-users-online">
