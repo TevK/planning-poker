@@ -184,16 +184,16 @@ img {
 }
 
 .poker-felt {
-	border-radius: 5px;
-	background-image: url('../img/poker-felt.jpg');
+	background-color: rgb(0,90,10);
 	border-radius: 5px;
 	margin-bottom: 10px;
 	padding: 40px;
-	height: 140px;
+	min-height: 140px;
 }
 
 .poker-felt .poker-card-display {
-	float: left;
+	/* float: left; */
+	display: inline-block;
 	margin-right: 40px;
 }
 
@@ -255,7 +255,7 @@ img {
 
 .poker-card-back {
 	display: none;
-	background-image: url('../img/pattern_bg.png');
+	background-image: url('../img/pattern_back.png');
 }
 
 .poker-card-back img {
