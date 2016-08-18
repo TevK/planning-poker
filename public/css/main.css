@@ -206,7 +206,7 @@ img {
 	color: #fff;
 	font-size: 15px;
 	display: block;
-	width: 70px;
+	width: 87px;
 	clear: both;
 	text-align: center;
 }
@@ -234,7 +234,7 @@ img {
 	background-color: #fff;
 	border-radius: 5px;
 	float: left;
-	width: 70px;
+	width: 87px;
 	height: 120px;
 	line-height: 120px;
 	margin-right: 5px;
@@ -253,9 +253,10 @@ img {
 	padding-right: 20px;
 }
 
-.poker-card-back {
+a.poker-card-back {
 	display: none;
 	background-image: url('../img/pattern_back.jpg');
+	background-size: contain;
 }
 
 .poker-card-back img {
