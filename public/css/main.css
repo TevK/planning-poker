@@ -229,11 +229,10 @@ img {
 }
 
 .poker-card {
-	display: block;
+	display: inline-block;
 	border: 2px solid #f46200;
 	background-color: #fff;
 	border-radius: 5px;
-	float: left;
 	width: 87px;
 	height: 120px;
 	line-height: 120px;
@@ -243,7 +242,7 @@ img {
 	font-weight: bold;
 }
 
-.poker-cards .poker-card:hover, .poker-card-selected {
+.poker-cards .poker-card:hover, a.poker-card-selected {
 	background-color: #f46200;
 	cursor: pointer;
 }
