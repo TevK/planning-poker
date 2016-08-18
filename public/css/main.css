@@ -397,13 +397,14 @@ a.poker-card-back {
 	height: 270px;
 	background-color: #fff;
 	z-index: 1;
-	margin-top: 30px;
+	margin-top: 40px;
 	padding: 5px;
+	right: 15px;
 }
 
 .poker-chat-messages {
 	height: 240px;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .poker-chat-messages-new input[type="text"] {
