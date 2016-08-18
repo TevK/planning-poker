@@ -228,7 +228,7 @@ img {
 	padding-left: 17px;
 }
 
-.poker-card {
+.poker-card, a.poker-card {
 	display: inline-block;
 	border: 2px solid #f46200;
 	background-color: #fff;
