@@ -28,7 +28,8 @@
 		for (var role in options.availableRoles) {
 			for (userId in userArray[role]) {
 				user = userArray[role][userId];
-				userArraySorted.push('<span class="poker-role poker-role-' + user.role + '">' + user.name.escape() + '</span>');
+				//userArraySorted.push('<span class="poker-role poker-role-' + user.role + '">' + user.name.escape() + '</span>');
+				userArraySorted.push('<li class="Pill poker-role poker-role-' + user.role + '">' + user.name.escape() + '</li>');
 			}
 		}
 		// Third: Set logged in users
