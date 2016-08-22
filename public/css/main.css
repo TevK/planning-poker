@@ -289,7 +289,7 @@ a.poker-card-back {
 	margin-bottom: 10px;
 	float: left;
 }
-
+/*
 .poker-role {
 	background-repeat: no-repeat;
 	background-position: left center;
@@ -316,7 +316,7 @@ a.poker-card-back {
 .poker-users-online .poker-role-spectator {
 	background-image: url(/img/icon/globe.png);
 }
-
+*/
 .poker-role-developer {
 	color: #f46200;
 }
