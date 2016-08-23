@@ -207,6 +207,7 @@ body { margin: 0; }
 	transition-duration: .2s;
 	box-shadow: 0px 2px 3px black;
 	margin: 0 6px 30px 0;
+	text-decoration: none;
 }
 
 .poker-cards .poker-card-selected {
@@ -214,11 +215,13 @@ body { margin: 0; }
   top: -20px;
 }
 
-.poker-cards .pooker-card:hover {
+.poker-cards .poker-card:hover {
   background: #ffc266;
+  text-decoration: none;
 }
 .poker-cards .poker-card-selected:hover {
   background: #e68a00;
+  text-decoration: none;
 }
 
 /*
