@@ -266,13 +266,14 @@ a.poker-card-selected {
 	display: none;
 	float: right;
     	padding-top: 10px;
+    	color: white;
 }
 
 .poker-userinfo-name, .poker-userinfo-role {
 	font-weight: normal;
-	color: #f46200;
+	/* color: #f46200; */
 }
-
+/*
 .poker-role-developer {
 	color: #f46200;
 }
@@ -288,7 +289,7 @@ a.poker-card-selected {
 .poker-role-spectator {
 	color: #c0c0c0;
 }
-
+*/
 .poker-userstory {
 	font-weight: bold;
 	display: none;
