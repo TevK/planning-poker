@@ -10,13 +10,11 @@
 				pokerCardsBack;
 
 			// Ignore request if the poker cards are not already shown
-			/*
 			pokerCardsBack = $(options.pokerCardBackClass); 
 			if (pokerCardsBack.length > 0 && !pokerCardsBack.is(':visible')) {
 				return;
 			}
-			*/
-
+			
 			socket = window.managedSocket;
 			selectedCard = $(event.target);
 			cardValue = selectedCard.html();
