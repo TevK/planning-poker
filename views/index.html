@@ -25,144 +25,119 @@
 	<div class="fed-wrapper">
 		
 		<div id="kss-topnav-wrapper">
-        <nav id="kss-topnav" class="u-marginFlushEnds u-paddingSidesHalf">
+			<nav id="kss-topnav" class="u-marginFlushEnds u-paddingSidesHalf">
 
-            <div id="DesktopNav" class="u-hide b2-u-show">
-                <div id="versionDropdown" class="Dropdown js-dropdown u-floatRight" data-max-height="450">
-  <div class="poker-chat">
-  	<button type="button" class="poker-chat-tray Button Button--link Dropdown-toggle">
-	    <span><%= __('room-chat') %></span>
-	    <i class="Button-caret"></i>
-	</button>
-	<!--
-	<div class="poker-chat-tray">
-		<img src="img/icon/comments.png" alt="Chat" class="poker-chat-nonew" />
-		<img src="img/icon/comments_add.png" alt="Chat" class="poker-chat-new" />
-		<span><%= __('room-chat') %></span>
-	</div>
-	-->
-	<div class="poker-chat-messages-container">
-		<div class="poker-chat-messages"></div>
-		<form class="poker-chat-messages-new">
-			<input type="text" name="new-chat-message" />
-			<img src="img/icon/add.png" alt="Go" />
-		</form>
-	</div>
-</div>
-                    
-                </div>
-                <ul class="List--unstyled u-gamma u-weightSemiBold u-marginFlush">
-                    <li id="OverviewSection" class="u-inlineBlock u-paddingFlush"><a class="u-block u-paddingSides u-paddingEndsHalf">Planning Poker</a></li>
-                </ul>
-            </div>
+				<div id="DesktopNav">
+					<div id="versionDropdown" class="Dropdown js-dropdown u-floatRight" data-max-height="450">
+						<div class="poker-chat">
+							<button type="button" class="poker-chat-tray Button Button--link Dropdown-toggle">
+								<span><%= __('room-chat') %></span>
+								<i class="Button-caret"></i>
+							</button>
+							<div class="poker-chat-messages-container">
+								<div class="poker-chat-messages"></div>
+								<form class="poker-chat-messages-new">
+									<input type="text" name="new-chat-message" />
+									<img src="img/icon/add.png" alt="Go" />
+								</form>
+							</div>
+						</div>
+					</div>
+					<ul class="List--unstyled u-gamma u-weightSemiBold u-marginFlush">
+						<li id="OverviewSection" class="u-inlineBlock u-paddingFlush"><a class="u-block u-paddingSides u-paddingEndsHalf">Planning Poker</a></li>
+					</ul>
+				</div>
 
-            <div id="MobileNav" class="Grid b2-u-hide u-marginFlush">
-                <div class="Grid-item u-size8of12">
-                </div>
-
-                <div class="Grid-item u-size4of12">
-                    <div id="versionDropdown" class="Dropdown js-dropdown u-floatRight" data-max-height="450">
-                        <button type="button" class="Button Button--link Dropdown-toggle">
-    <span>Chat</span>
-    <i class="Button-caret"></i>
-  </button>
-                        
-                    </div>
-                </div>
-
-            </div>
-
-        </nav>
-    </div>
-		
-		
-	<div class="poker-overlay" id="poker-notification">
-		<div class="poker-message">
-			<p class="poker-top" id="poker-notification-title"></p>
-			<p id="poker-notification-text"><img src="img/ajax-loader.gif" /></p>
+			</nav>
 		</div>
-	</div>
-	<div class="poker-overlay" id="poker-login">
-		<div class="poker-message">
-			<div class="poker-top"><%= __('login-title') %></div>
+		
+		<div class="poker-overlay" id="poker-notification">
+			<div class="poker-message">
+				<p class="poker-top" id="poker-notification-title"></p>
+				<p id="poker-notification-text"><img src="img/ajax-loader.gif" /></p>
+			</div>
+		</div>
+		<div class="poker-overlay" id="poker-login">
+			<div class="poker-message">
+				<div class="poker-top"><%= __('login-title') %></div>
 				<div class="poker-content">
-				<form action="/login" method="post" id="poker-login-form">
-					<p class="poker-login-user">
-						<label><%= __('login-role') %></label>
-						<select name="role">
-							<option value="developer"><%= __('role-dev') %></option>
-							<option value="productOwner"><%= __('role-productOwner') %></option>
-							<option value="scrumMaster"><%= __('role-scrumMaster') %></option>
-							<option value="spectator"><%= __('role-spectator') %></option>
-						</select>
-					</p>
+					<form action="/login" method="post" id="poker-login-form">
+						<p class="poker-login-user">
+							<label><%= __('login-role') %></label>
+							<select name="role">
+								<option value="developer"><%= __('role-dev') %></option>
+								<option value="productOwner"><%= __('role-productOwner') %></option>
+								<option value="scrumMaster"><%= __('role-scrumMaster') %></option>
+								<option value="spectator"><%= __('role-spectator') %></option>
+							</select>
+						</p>
 
-					<p class="poker-login-user">
-						<label><%= __('login-name') %></label>
-						<input type="text" name="name" />
-					</p>
+						<p class="poker-login-user">
+							<label><%= __('login-name') %></label>
+							<input type="text" name="name" />
+						</p>
 
-					<p class="poker-login-user">
-						<input type="submit" value="<%= __('login-button') %>" class="Button Button--secondary poker-login-submit" disabled="disabled" />
-					</p>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div class="poker-main">
-		<div class="poker-top">&nbsp;</div>
-
-		<div class="poker-content">
-			<h1><%= __('title') %></h1>
-			<div class="poker-users">
-				<p><%= __('room-present') %>:</p>
-				<ul class="poker-users-online">
-				</ul>
-			</div>
-
-			<div class="poker-separator">&nbsp;</div>
-
-			<div class="poker-userstory">
-				<div class="poker-userstory-text-container">
-					<p id="poker-userstory-text"></p>
-					<p>Common questions: Which components/repos? What testing? Any dependencies/blockers?</p>
-					<p class="poker-userstory-edit scrum-product-owner">
-						<button id="poker-userstory-edit-button" disabled="disabled"><img src="img/icon/page_edit.png" alt="" /> <%= __('userstory-edit') %></button>
-					</p>
+						<p class="poker-login-user">
+							<input type="submit" value="<%= __('login-button') %>" class="Button Button--secondary poker-login-submit" disabled="disabled" />
+						</p>
+					</form>
 				</div>
 			</div>
+		</div>
+		<div class="poker-main">
+			<div class="poker-top">&nbsp;</div>
 
-			<div class="poker-separator">&nbsp;</div>
-			<div class="poker-felt"></div>
-			<div class="poker-separator">&nbsp;</div>
-			<div class="poker-userinfo">
-				<%= __('room-youare') %>: <span class="poker-userinfo-name"></span> (<span class="poker-userinfo-role"></span>)
-				<img src="img/icon/door_out.png" alt="Ausloggen" title="Ausloggen" class="poker-logout" />
-			</div>
-			<div class="poker-cards scrum-developer">
-				<% for (var card in cards) { %>
+			<div class="poker-content">
+				<h1><%= __('title') %></h1>
+				<div class="poker-users">
+					<p><%= __('room-present') %>:</p>
+					<ul class="poker-users-online">
+					</ul>
+				</div>
+
+				<div class="poker-separator">&nbsp;</div>
+
+				<div class="poker-userstory">
+					<div class="poker-userstory-text-container">
+						<p id="poker-userstory-text"></p>
+						<p>Common questions: Which components/repos? What testing? Any dependencies/blockers?</p>
+						<p class="poker-userstory-edit scrum-product-owner">
+							<button id="poker-userstory-edit-button" disabled="disabled"><img src="img/icon/page_edit.png" alt="" /> <%= __('userstory-edit') %></button>
+						</p>
+					</div>
+				</div>
+
+				<div class="poker-separator">&nbsp;</div>
+				<div class="poker-felt"></div>
+				<div class="poker-separator">&nbsp;</div>
+				<div class="poker-userinfo">
+					<%= __('room-youare') %>: <span class="poker-userinfo-name"></span> (<span class="poker-userinfo-role"></span>)
+					<img src="img/icon/door_out.png" alt="Ausloggen" title="Ausloggen" class="poker-logout" />
+				</div>
+				<div class="poker-cards scrum-developer">
+					<% for (var card in cards) { %>
 					<a class="poker-card"><%= cards[card] %></a>
-				<% } %>
+					<% } %>
+				</div>
+				<div class="poker-cards-show scrum-master">
+					<button id="poker-room-reset" type="button" class="Button Button--secondary"><i class="Icon--removeFolder"></i> <%= __('room-reset') %></button>
+					<button id="poker-cards-reset-button"type="button" class="Button Button--secondary"><i class="Icon--undo"></i> <%= __('cards-reset') %></button>
+					<button id="poker-cards-show-button" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('cards-show') %></button>
+				</div>
+				<form class="poker-userstory-form scrum-product-owner">
+					<textarea id="poker-userstory-textarea"></textarea>
+					<button id="poker-userstory-post" disabled="disabled" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('userstory-post') %></button>
+				</form>
+				<div class="poker-separator">&nbsp;</div>
 			</div>
-			<div class="poker-cards-show scrum-master">
-				<button id="poker-room-reset" type="button" class="Button Button--secondary"><i class="Icon--removeFolder"></i> <%= __('room-reset') %></button>
-				<button id="poker-cards-reset-button"type="button" class="Button Button--secondary"><i class="Icon--undo"></i> <%= __('cards-reset') %></button>
-				<button id="poker-cards-show-button" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('cards-show') %></button>
-			</div>
-			<form class="poker-userstory-form scrum-product-owner">
-				<textarea id="poker-userstory-textarea"></textarea>
-				<button id="poker-userstory-post" disabled="disabled" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('userstory-post') %></button>
-			</form>
-			<div class="poker-separator">&nbsp;</div>
 		</div>
-	</div>
 
-	<footer class="poker-footer">
-		<div class="poker-content">
-			Modified from https://github.com/inovex/planning-poker in 2016 under the AGPLv3 license
-		</div>
-	</footer>
-	<div class="fed-wrapper">
+		<footer class="poker-footer">
+			<div class="poker-content">
+				Modified from https://github.com/inovex/planning-poker in 2016 under the AGPLv3 license
+			</div>
+		</footer>
+	</div>
 	<script type="text/javascript">
 		var i18n = {
 			'room-reset-confirm': '<%= __("room-reset-confirm") %>',
