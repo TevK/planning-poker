@@ -172,7 +172,7 @@ body { margin: 0; }
 }
 
 .poker-cards .poker-card {
-	background: #99ccff;
+	background-color: #99ccff;
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 28px;
@@ -193,19 +193,18 @@ body { margin: 0; }
 }
 
 .poker-cards .poker-card-selected {
-  background: #e68a00;
+  background-color: #e68a00;
   top: -20px;
 }
 
 .poker-cards .poker-card:hover {
-  background: #ffc266;
+  background-color: #ffc266;
   text-decoration: none;
 }
 .poker-cards .poker-card-selected:hover {
-  background: #e68a00;
+  background-color: #e68a00;
   text-decoration: none;
 }
-
 
 .poker-cards {
 	clear: both;
