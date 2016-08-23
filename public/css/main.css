@@ -17,56 +17,6 @@ body { margin: 0; }
     color: #fff;
 }
 
-
-/*
-body {
-	background-image: url('../img/pattern_bg.jpg');
-	margin-bottom: 0;
-}
-
-* {
-	font-family: helvetica,arial;
-	font-size: 12px;
-}
-
-::selection {
-	background: #666;
-	color: #fff;
-}
-
-h1 {
-	color: #f46200;
-	font-size: 1.5em;
-	margin: 20px 0 20px 0;
-}
-
-input, select {
-	border: 1px solid #f46200;
-	padding: 5px;
-	width: 150px;
-	display: block;
-	background-color: #fff;
-}
-
-input[type="submit"] {
-	width: 162px;
-}
-
-p {
-	margin: 0;
-	padding: 0;
-}
-
-button {
-	cursor: pointer;
-}
-
-img {
-	position: relative;
-	top: 3px;	
-}
-*/
-
 .poker-ajax-loader {
 	display: none;
 }
@@ -182,7 +132,7 @@ img {
 	color: #999;
 	*/
 }
-
+/*
 .poker-felt {
 	background-color: rgb(0,90,10);
 	border-radius: 5px;
@@ -192,7 +142,6 @@ img {
 }
 
 .poker-felt .poker-card-display {
-	/* float: left; */
 	display: inline-block;
 	margin-right: 40px;
 }
@@ -222,7 +171,45 @@ img {
 	color: #b0b0b0;
 	text-decoration: none;
 }
+*/
+.poker-felt {
+	background-color: rgb(0,90,10);
+	border-radius: 5px;
+}
 
+.poker-felt .poker-card {
+	
+}
+
+.poker-cards {
+	margin-top: 30px;
+	position: relative;
+	background: green;
+	padding: 30px 20px 0px 20px;
+	display: inline-block;
+}
+
+.poker-cards .poker-card {
+	background: #99ccff;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 28px;
+	display: inline-block;
+	position: relative;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	line-height: 80px;
+	text-align: center;
+	transition-property: top;
+	transition-duration: .2s;
+	box-shadow: 0px 2px 3px black;
+	margin: 0 6px 30px 0;
+}
+
+/*
 .poker-cards {
 	clear: both;
 	padding-left: 17px;
@@ -279,7 +266,7 @@ a.poker-card-back {
 .poker-card-display-hidden .poker-card-back {
 	display: block;
 }
-
+*/
 .poker-userinfo {
 	text-align: right;
 	padding-right: 20px;
@@ -298,34 +285,7 @@ a.poker-card-back {
 	margin-bottom: 10px;
 	float: left;
 }
-/*
-.poker-role {
-	background-repeat: no-repeat;
-	background-position: left center;
-	padding: 3px 5px 3px 18px;
-}
 
-.poker-users-online {
-	font-weight: normal;
-	margin-left: 3px;
-}
-
-.poker-users-online .poker-role-developer {
-	background-image: url(/img/icon/monitor.png);
-}
-
-.poker-users-online .poker-role-productOwner {
-	background-image: url(/img/icon/piggy_bank.png);
-}
-
-.poker-users-online .poker-role-scrumMaster {
-	background-image: url(/img/icon/clapboard.png);
-}
-
-.poker-users-online .poker-role-spectator {
-	background-image: url(/img/icon/globe.png);
-}
-*/
 .poker-role-developer {
 	color: #f46200;
 }
