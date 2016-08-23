@@ -26,6 +26,9 @@ body { margin: 0; }
 }
 
 /** Role specific definitions */
+.scrum-master { 
+	margin-top: 10px;
+}
 
 .scrum-master, .scrum-product-owner {
 	display: none;
@@ -163,7 +166,7 @@ body { margin: 0; }
 .poker-cards {
 	margin-top: 30px;
 	position: relative;
-	background: green;
+	background: background-color: rgb(0,90,10);;
 	padding: 30px 20px 0px 20px;
 	display: inline-block;
 }
@@ -263,7 +266,7 @@ a.poker-card-selected {
 
 .poker-userinfo {
 	text-align: right;
-	padding-right: 20px;
+	padding: 20px 10px;
 	margin-bottom: 10px;
 	font-weight: bold;
 	display: none;
