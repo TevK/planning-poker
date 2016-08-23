@@ -29,6 +29,10 @@
 
 				<div id="DesktopNav">
 					<div id="versionDropdown" class="Dropdown js-dropdown u-floatRight" data-max-height="450">
+						<div class="poker-userinfo">
+							<%= __('room-youare') %>: <span class="poker-userinfo-name"></span> (<span class="poker-userinfo-role"></span>)
+							<img src="img/icon/door_out.png" alt="Ausloggen" title="Ausloggen" class="poker-logout" />
+						</div>
 						<div class="poker-chat">
 							<button type="button" class="poker-chat-tray Button Button--link Dropdown-toggle">
 								<span><%= __('room-chat') %></span>
@@ -107,10 +111,7 @@
 					<a class="poker-card"><%= cards[card] %></a>
 					<% } %>
 				</div>
-				<div class="poker-userinfo">
-					<%= __('room-youare') %>: <span class="poker-userinfo-name"></span> (<span class="poker-userinfo-role"></span>)
-					<img src="img/icon/door_out.png" alt="Ausloggen" title="Ausloggen" class="poker-logout" />
-				</div>
+				
 				<div class="poker-felt"></div>
 				<div class="poker-cards-show scrum-master">
 					<button id="poker-room-reset" type="button" class="Button Button--secondary"><i class="Icon--removeFolder"></i> <%= __('room-reset') %></button>
