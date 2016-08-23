@@ -93,9 +93,6 @@
 					<ul class="poker-users-online">
 					</ul>
 				</div>
-
-				<div class="poker-separator">&nbsp;</div>
-
 				<div class="poker-userstory">
 					<div class="poker-userstory-text-container">
 						<p id="poker-userstory-text"></p>
@@ -105,19 +102,16 @@
 						</p>
 					</div>
 				</div>
-
-				<div class="poker-separator">&nbsp;</div>
-				<div class="poker-felt"></div>
-				<div class="poker-separator">&nbsp;</div>
-				<div class="poker-userinfo">
-					<%= __('room-youare') %>: <span class="poker-userinfo-name"></span> (<span class="poker-userinfo-role"></span>)
-					<img src="img/icon/door_out.png" alt="Ausloggen" title="Ausloggen" class="poker-logout" />
-				</div>
 				<div class="poker-cards scrum-developer">
 					<% for (var card in cards) { %>
 					<a class="poker-card"><%= cards[card] %></a>
 					<% } %>
 				</div>
+				<div class="poker-userinfo">
+					<%= __('room-youare') %>: <span class="poker-userinfo-name"></span> (<span class="poker-userinfo-role"></span>)
+					<img src="img/icon/door_out.png" alt="Ausloggen" title="Ausloggen" class="poker-logout" />
+				</div>
+				<div class="poker-felt"></div>
 				<div class="poker-cards-show scrum-master">
 					<button id="poker-room-reset" type="button" class="Button Button--secondary"><i class="Icon--removeFolder"></i> <%= __('room-reset') %></button>
 					<button id="poker-cards-reset-button"type="button" class="Button Button--secondary"><i class="Icon--undo"></i> <%= __('cards-reset') %></button>
@@ -127,7 +121,6 @@
 					<textarea id="poker-userstory-textarea"></textarea>
 					<button id="poker-userstory-post" disabled="disabled" type="button" class="Button" disabled="disabled"><i class="Icon--check"></i> <%= __('userstory-post') %></button>
 				</form>
-				<div class="poker-separator">&nbsp;</div>
 			</div>
 		</div>
 
