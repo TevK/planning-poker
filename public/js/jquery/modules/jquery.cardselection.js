@@ -14,10 +14,11 @@
 			if (pokerCardsBack.length > 0 && !pokerCardsBack.is(':visible')) {
 				return;
 			}
-			if (selectedCard.html().length < 4) {
+			
 			socket = window.managedSocket;
 			selectedCard = $(event.target);
 			cardValue = selectedCard.html();
+			if ($(event.target).html().length < 4) {
 			user = JSON.parse(localStorage.getItem(options.lsUserKey));
 
 			socketData = {
