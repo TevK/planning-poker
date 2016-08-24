@@ -14,7 +14,7 @@
 			if (pokerCardsBack.length > 0 && !pokerCardsBack.is(':visible')) {
 				return;
 			}
-			
+			if (selectedCard.html().length < 4) {
 			socket = window.managedSocket;
 			selectedCard = $(event.target);
 			cardValue = selectedCard.html();
@@ -25,10 +25,10 @@
 				userId: user.id,
 				cardValue: cardValue
 			};
-
 			socket.send(JSON.stringify(socketData));
 			$('.' + options.selectedClass).removeClass(options.selectedClass);
 			selectedCard.addClass(options.selectedClass);
+			}
 		})
 	};
 
