@@ -242,8 +242,12 @@ a.poker-card-selected {
 
 .poker-felt a.poker-card-back {
 	display: none;
-	background-image: url('../img/pattern_back.jpg');
+	background-image: url('../img/card-back.gif');
 	background-size: contain;
+}
+
+.poker-felt a.poker-card-back.cat {
+	background-image: url('../img/card-back-cat.gif');
 }
 
 .poker-felt .poker-card-back img {
